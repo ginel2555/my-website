@@ -7,7 +7,89 @@
 </head>
 <body>
     <div class="panel">
-        <!-- HTML content... -->
+        <div class="section">
+            <!-- Left section for future expansion -->
+        </div>
+
+        <div class="section">
+            <div class="warning" id="warning"></div>
+            <div class="floor-display" id="floorDisplay">0</div>
+            <div class="door-status" id="doorStatus">Awaiting input...</div>
+            <div class="input-display" id="inputDisplay">____</div>
+            <div class="keypad">
+                <button class="button" onclick="handleInput(1)">1</button>
+                <button class="button" onclick="handleInput(2)">2</button>
+                <button class="button" onclick="handleInput(3)">3</button>
+                <button class="button" onclick="handleInput(4)">4</button>
+                <button class="button" onclick="handleInput(5)">5</button>
+                <button class="button" onclick="handleInput(6)">6</button>
+                <button class="button" onclick="handleInput(7)">7</button>
+                <button class="button" onclick="handleInput(8)">8</button>
+                <button class="button" onclick="handleInput(9)">9</button>
+                <button class="button clear" onclick="handleClear()">C</button>
+                <button class="button" onclick="handleInput(0)">0</button>
+                <button class="button" onclick="handleEnter()">E</button>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">QUANTUM METRICS</div>
+            <div class="quantum-section">
+                <div class="quantum-metric">
+                    <div class="quantum-metric-label">
+                        <span>Reality Coherence</span>
+                        <span>20%</span>
+                    </div>
+                    <div class="quantum-metric-bar">
+                        <div class="quantum-metric-fill" style="width: 20%"></div>
+                    </div>
+                </div>
+                <div class="quantum-metric">
+                    <div class="quantum-metric-label">
+                        <span>Dimensional Overlap</span>
+                        <span>33%</span>
+                    </div>
+                    <div class="quantum-metric-bar">
+                        <div class="quantum-metric-fill" style="width: 33%"></div>
+                    </div>
+                </div>
+                <div class="quantum-metric">
+                    <div class="quantum-metric-label">
+                        <span>Entropy Coefficient</span>
+                        <span>88%</span>
+                    </div>
+                    <div class="quantum-metric-bar">
+                        <div class="quantum-metric-fill" style="width: 88%"></div>
+                    </div>
+                </div>
+                
+                <div class="dimensional-metrics">
+                    <div class="section-title">DIMENSIONAL CONSTANTS</div>
+                    <div class="quantum-metric">
+                        <div class="quantum-metric-label">
+                            <span>Temporal Stability</span>
+                            <span>78%</span>
+                        </div>
+                        <div class="quantum-metric-bar">
+                            <div class="quantum-metric-fill" style="width: 78%"></div>
+                        </div>
+                    </div>
+                    <div class="quantum-metric">
+                        <div class="quantum-metric-label">
+                            <span>Quantum Resonance</span>
+                            <span>45%</span>
+                        </div>
+                        <div class="quantum-metric-bar">
+                            <div class="quantum-metric-fill" style="width: 45%"></div>
+                        </div>
+                    </div>
+                    <div class="dense-symbols">
+                        ᚖ꓾꓿∧|—⊏⊐⋀⋁⊙○ꔈꔉ∞ꔊ⊕⊝ꓭ⋖⋗☉✷□𐎔ꓮꓯ⊏⊐ꓴꓵ⋈ꓶꓷ⊖⊝○ꔈꔉ⊗⊚⊢∨∧ꓸꓹ⊕☽○☾⌧⋈ꓺꓻ⊙○ꔂꔃꔄꔅ⊥⊥⊤⊤∞ꔊ⋌⋋≈≋∨∧><>⌧⊗↑⋀⊢⊢⊓|||≤≥≪≫⊕⊝ꓭꓮꓯꓰ∞ꔊ⊙○☉✷
+                    </div>
+                </div>
+            </div>
+            <button id="accessButton" class="access-button">ACCESS FLOOR</button>
+        </div>
     </div>
     <script src="js/quantum.js"></script>
 </body>
